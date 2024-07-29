@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if</title>
+</head>
+<body>
+    <script>
+        const num = Number (prompt("Enter a number"))
+        if (num>0){
+            alert(`${num} is a postive number`)
+        }
+        else if(num <0){
+            alert(`$(num) is a negative number`)
+        }
+        else{
+            alert(`given number is zero`)
+        }
+      //  if given number is divisiable by 3 and 5 then given fizzbuzz, if given number is divisible by 3 only given fizz, if given number is divisible by 5 only given buzz, otherwise print the given
+      function fizzbuzz(number) {
+        if (number % 3 === 0 && number % 5 === 0) {
+            return "fizzbuzz";
+        } else if (number % 3 === 0) {
+            return "fizz";
+        } else if (number % 5 === 0) {
+            return "buzz";
+        } else {
+            return number.toString();
+        }
+    }
+    
+    // Example usage:
+    for (let i = 1; i <= 20; i++) {
+        console.log(fizzbuzz(i));
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

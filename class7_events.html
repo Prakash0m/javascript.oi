@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+  </head>
+  <body>
+    <pre>
+ event are action or occurance that takes place when user intreact with web pages onclick, ondblclick, onsumbit , onchange, onkeyup, </pre
+    >
+    <button onclick="demoFunction()" ondblclick="empty">click me date</button>
+    <h2 id="heading" class="two"></h2>
+    <h1 class="two" style="background-color: orange"></h1>
+    <h3 class="two" style="background-color: skyblue"></h3>
+    <button onclick="testFunction()">One click me for hello world</button>
+    <script>
+      const demoFunction = () => {
+        //document.write(new Date())
+        document.querySelector("#heading").innerHTML = new Date();
+        document.getElementById("heading").style.backgroundColor = "red";
+        document.getElementById("heading").style.color = "white";
+      };
+      const empty = () => {
+        document.querySelector(`h2`)[0].innerHTML = "";
+      };
+      const testFunction = () => {
+        document.getElementsByClassName("two")[2].innerHTML = "Hello world";
+      };
+    </script>
+  </body>
+</html>

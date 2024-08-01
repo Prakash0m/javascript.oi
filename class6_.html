@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //take an input the program until user and run the program until user didnot enter odd number, if user give even number then again take the input
+
+      function checkNumber() {
+        let number;
+        do {
+          number = prompt("Enter a number:");
+          if (number === null) {
+            break; // Exit if the user cancels the prompt
+          }
+          number = parseInt(number, 10);
+          if (isNaN(number)) {
+            alert("Please enter a valid number.");
+          } else if (number % 2 === 0) {
+            alert("You entered an even number. Try again.");
+          }
+        } while (number % 2 === 0 || isNaN(number));
+        if (number % 2 !== 0) {
+          alert("You entered an odd number. Program will stop.");
+        }
+      }
+    </script>
+  </body>
+</html>

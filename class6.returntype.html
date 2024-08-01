@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return type</title>
+  </head>
+  <body>
+    <script>
+       const x = Number(prompt("Enter a first number"))
+       const y = Number(prompt("Enter a second number"))
+       const z = Number(prompt("Enter a Third number"))
+
+       function substraction (a,b,c){
+          const sum = a+b+c
+          const percentage = sum/300*100
+          if (percentage>=80){
+              return ` A garade with ${percentage}%`
+          }
+          else if (percentage>=60 && percentage <=79)
+              return ` B garde with ${percentage}%`
+          }
+          else if (percentage>=40 && percentage <=59){
+              return ` C gradewith ${percentage}%`
+          }
+          else {
+              return` Fail with${percentage}%`
+          }
+
+      const garde = substraction(x,y,z)
+
+      document.write(`${garde}`)
+    </script>
+  </body>
+</html>

@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js_class</title>
-
-</head>
-<body>
-<script>
-    const pin = 1234;
-const userpin = Number(prompt("Enter your Pin"));
-if (userpin === pin) {
-  alert("Welcome to ATM dashboard");
-  const num = Number(
-    prompt(
-      "Choose one Option below \n 1. FastCash \n 2. Withdraw \n 3. Balance Statement \n 4. Cancel"
-    )
-  );
-  if (num === 1) {
-    alert("fast cash ");
-    const numf = Number(
-      prompt(
-        "Choose one option below \n 1. 1000 \n 2. 2000 \n 3. 5000 \n 4. 10000"
-      )
-    );
-    if (numf === 1) {
-      alert("1000");
-    } else if (numf === 2) {
-      alert("2000");
-    } else if (numf === 3) {
-      alert("5000");
-    } else if (numf === 4) {
-      alert("10000");
-    } else {
-      alert("Invalid option entered");
-    }
-  } else if (num === 2) {
-    alert("Withdraw");
-    const fnum = Number(
-      prompt("Enter your Amount \n 1. 5000 \n 2. 10000 \n 3. 15000 \n 4. 25000")
-    );
-    if (fnum === 1) {
-      alert("5000");
-    } else if (fnum === 2) {
-      alert("10000");
-    } else if (fnum === 3) {
-      alert("15000");
-    } else if (fnum === 4) {
-      alert("25000");
-    } else {
-      alert("Invalid amount");
-    }
-  } else if (num === 3) {
-    alert("Balance Statement");
-  } else if (num === 4) {
-    alert("Cancel");
-  } else {
-    alert("Invalid option entered");
-  }
-} else {
-  alert("Incorrect PIN");
-}
-
-</script>
-</body>
+  </head>
+  <body>
+    <script>
+      const pin = 1234;
+      const userpin = Number(prompt("Enter your Pin"));
+      if (userpin === pin) {
+        alert("Welcome to ATM dashboard");
+        const num = Number(
+          prompt(
+            "Choose one Option below \n 1. FastCash \n 2. Withdraw \n 3. Balance Statement \n 4. Cancel"
+          )
+        );
+        if (num === 1) {
+          alert("fast cash ");
+          const numf = Number(
+            prompt(
+              "Choose one option below \n 1. 1000 \n 2. 2000 \n 3. 5000 \n 4. 10000"
+            )
+          );
+          if (numf === 1) {
+            alert("1000");
+          } else if (numf === 2) {
+            alert("2000");
+          } else if (numf === 3) {
+            alert("5000");
+          } else if (numf === 4) {
+            alert("10000");
+          } else {
+            alert("Invalid option entered");
+          }
+        } else if (num === 2) {
+          alert("Withdraw");
+          const fnum = Number(
+            prompt(
+              "Enter your Amount \n 1. 5000 \n 2. 10000 \n 3. 15000 \n 4. 25000"
+            )
+          );
+          if (fnum === 1) {
+            alert("5000");
+          } else if (fnum === 2) {
+            alert("10000");
+          } else if (fnum === 3) {
+            alert("15000");
+          } else if (fnum === 4) {
+            alert("25000");
+          } else {
+            alert("Invalid amount");
+          }
+        } else if (num === 3) {
+          alert("Balance Statement");
+        } else if (num === 4) {
+          alert("Cancel");
+        } else {
+          alert("Invalid option entered");
+        }
+      } else {
+        alert("Incorrect PIN");
+      }
+    </script>
+  </body>
 </html>

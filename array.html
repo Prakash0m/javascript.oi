@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let p_language = ["javascript", "PHP", "Python", "Java"];
+      console.log(`${p_language}`);
+      console.log(`${p_language.length}`);
+      console.log(`${p_language[0][1]}`);
+      p_language.push("Golang");
+      console.log(`${p_language}`);
+      p_language.pop();
+      console.log(`${p_language}`);
+      p_language.unshift("Dart");
+      console.log(`${p_language}`);
+      p_language.shift();
+      console.log(`${p_language}`);
+      p_language.splice(1, 2, "Rust");
+      console.log(`${p_language}`);
+
+      console.log(`${p_language.sort()}`);
+      console.log(`${p_language.reverse()}`);
+
+      let m_language = ["HTML", "CSS"];
+      console.log(`${p_language.concat(m_language)}`);
+    </script>
+  </body>
+</html>

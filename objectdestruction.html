@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobject distruction</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        firstname: "Ram",
+        lastnmae: "Shrestha",
+        email: "ram@gmail.com",
+        height: "5.6",
+        age: 15,
+      };
+      const showData = ({ firstname, lastnmae, email, height, age }) => {
+        return `The user name is ${firstname}${lastnmae}.User email is ${email}`;
+      };
+      document.write(showData(user));
+    </script>
+  </body>
+</html>

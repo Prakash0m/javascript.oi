@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorgae</title>
+</head>
+<body>
+    <button>Remove</button>
+    <h2 style="color: aquamarine;"></h2>
+    <script>
+
+
+localStorage.setItem('Data','Welcome to our localstorage class')
+const show = localStorage.getItem('data')
+console.log(show)
+
+const b = document.querySelector('button')
+b.addEventListener('click', ()=>{
+    localStorage.removeItem('Data')
+})
+// // sessionStorage
+ // JSON => Javascript Object Notation
+  const student = {
+    'firstname': 'Ashis',
+    'lastname' : ' Shrestha',
+    'Education' : 'Bacherlor',
+    'age': '22'
+  }
+  localStorage.setItem('student', JSON.stringify(student))
+const show_item = JSON.parse(localStorage.getItem('student'))
+document.write(show_item.firstname, show_item.lastname)
+document.querySelector('h2').innerHTML = ` ${show_item.firstname}&nbsp; ${show_item.lastname}`
+
+
+
+
+
+    </script>
+</body>
+</html>

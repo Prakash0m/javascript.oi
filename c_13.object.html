@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object without class</title>
+</head>
+
+<body>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Education</th>
+       
+      </tr>
+      <tr>
+        <td id="fname"></td>
+        <td id="lname"></td>
+        <td id="e"></td>
+      </tr>
+  
+
+
+
+
+    <script>
+const dur_student = {
+    firstname:'Ram',
+    lastname:'shrestha',
+    education: 'bachelor'
+}
+document.write(dur_student.firstname)
+document.getElementById('fname').innerHTML = `${dur_student.firstname}`
+document.getElementById('lname').innerHTML = `${dur_student.lastname}`
+document.getElementById('e').innerHTML = `${dur_student.education}`
+
+
+
+
+
+    </script>
+</body>
+</html>

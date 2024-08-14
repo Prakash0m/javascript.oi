@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+// blueprint of object
+class Student {
+    constructor(name, position){
+        this.name = name
+        this.position, position
+    }
+//method
+show(){
+    return ` Studentname is ${this.name}.student position is ${this.position}`
+}
+
+
+
+}
+const obj_hero = new Student('Ram Shrestha','Full Stack Developer')
+const obj_dangol = new Student('Nabin Dangol', 'Full Stack Develope')
+
+
+document.write(obj_hero.name)
+document.write(obj_dangol.name,"<br>")
+document.write(obj_dangol.show())
+
+
+
+
+    </script>
+</body>
+</html>

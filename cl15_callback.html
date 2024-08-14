@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallbackFunction</title>
+</head>
+<body>
+    <div>
+
+
+    </div>
+    <script>
+const news = [{'title':'hello','body':'Hello world'},{'title':'Welcome','body':'welcome to dursikshya'}]
+
+const showNews =()=>{
+    setTimeout(()=>{
+        let result = ""
+        news.forEach(item=>{
+            result+= ` <ul>
+        <li>${data.title}</li>
+        <li>${data.body}</>
+
+
+            </ul>`
+        })
+        document.querySelector('div').innerHTML=result
+    },5000)
+}
+
+showNews()
+const addNews = (newdata,callback)=>{
+    setTimeout(()=>{
+        news.push(newdata)
+        callback()
+    },3000)
+}
+
+addNews({'title':'honda','body':'Japan'},showNews)
+
+
+    </script>
+</body>
+</html>

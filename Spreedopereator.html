@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed and rest operator(.....)</title>
+</head>
+<body>
+    <script>
+const arr1= [1,2,3,4,5]
+
+const arr2= [5,4,3,2,1]
+
+const arr = [...arr1,...arr2]
+
+const name = ['binod','ashish','nabin','om','sandip']
+const [hello, an_student, student, ...rest]=name
+document.write(`${hello} <br>`)
+document.write(`${an_student} <br>`)
+document.write(`${student} <br>`)
+document.write(rest)
+
+
+
+    </script>
+</body>
+</html>

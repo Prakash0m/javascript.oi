@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=scr, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=scr, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        //reduce give the final output od arry element after performing the condition 
-let prices = [1000,2000,3000,4000,5000]
+      //reduce give the final output od arry element after performing the condition
+      let prices = [1000, 2000, 3000, 4000, 5000];
 
-
-
-const totalPrice= prices.reduce((a,c)=>{
-    return a+c
-// 0+1000=1000,
-// 1000+2000 = 3000,
-// 3000+3000 = 6000,
-// 6000+4000 = 100000'
-// 10000+5000 = 15000
-
-},0)
-document.write(totalPrice)
-
-
-
+      const totalPrice = prices.reduce((a, c) => {
+        return a + c;
+        // 0+1000=1000,
+        // 1000+2000 = 3000,
+        // 3000+3000 = 6000,
+        // 6000+4000 = 100000'
+        // 10000+5000 = 15000
+      }, 0);
+      document.write(totalPrice);
     </script>
-</body>
+  </body>
 </html>

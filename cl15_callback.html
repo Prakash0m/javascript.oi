@@ -18,14 +18,14 @@ const showNews =()=>{
         let result = ""
         news.forEach(item=>{
             result+= ` <ul>
-        <li>${data.title}</li>
-        <li>${data.body}</>
+        <li>${item.title}</li>
+        <li>${item.body}</>
 
 
             </ul>`
         })
         document.querySelector('div').innerHTML=result
-    },5000)
+    },2000)
 }
 
 showNews()

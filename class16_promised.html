@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        const news = [{ 'title': 'hello ', 'body': '<i>hello world</i>' }, { 'title': 'wellcome ', 'body': 'wellcome to dursikshya' }]
+        const showNews = () => {
+            setTimeout(() => {
+                let result = ""
+                news.forEach(data => {
+                    result += `<ul>
+                    <li>${data.title}</li>
+                    <li>${data.body}</>
+    
+                    </ul>`
+                })
+                document.querySelector('div').innerHTML = result
+            }, 5000)
+        }
+        const addNews = newData => {
+            return new Promise((resolve, reject) => {
+
+                news.push(newData)
+                const error = false
+                if (!error) {
+                    resolve()
+                }
+                else {
+                    reject('some think went wrong')
+                }
+
+            }, 2000)
+        }
+
+
+
+        //addNews({ 'title': 'honda', 'body': 'japan' })
+            //.then(showNews)
+           // .catch(err => console.log(err))
+           const demofunction=async()=>{
+            await addNews({ 'title': 'honda', 'body': 'japan'})
+            showNews
+           }
+demofunction()
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

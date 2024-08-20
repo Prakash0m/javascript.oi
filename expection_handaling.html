@@ -9,10 +9,15 @@
     <script>
         try{
             const num = parseInt(prompt("Enter a number= "))
-           
-        }
-catch (error){
+           if (num===0){
+            throw new TypeError("kindly provide a number")
+           }
 
+
+
+        }
+catch (err){
+document.querySelector('div').innerHTML = err.mes   
 }
 
 
